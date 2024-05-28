@@ -11,3 +11,13 @@ class WordSeacrhEvent extends HomeEvent {
   @override
   List<Object> get props => [];
 }
+
+class SearchButtonClickEvent extends HomeEvent {
+  final String word;
+  const SearchButtonClickEvent({required this.word});
+}
+
+class PlayAudioEvent extends HomeEvent {
+  final String audiopath;
+  const PlayAudioEvent({required this.audiopath});
+}
